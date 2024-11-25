@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Quiz App</h1>
+    <p>Select a category and difficulty to start</p>
+  </header>
+
+  <!-- Category & Difficulty Filters -->
+  <section class="filters">
+    <div class="category-icons">
+      <label for="category">Category:</label>
+      <div class="category-item">
+        <i class="fas fa-globe" title="Geography"></i> <!-- Geography icon -->
+        <select id="category">
+          <option value="Geography">Geography</option>
+          <option value="Mathematics">Mathematics</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="difficulty-icons">
+      <label for="difficulty">Difficulty:</label>
+      <div class="difficulty-item">
+        <i class="fas fa-snowflake" title="Easy"></i> <!-- Easy icon -->
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="start-quiz-btn">Start Quiz</button>
+  </section>
+
+  <!-- Quiz List (Dynamic) -->
+  <section id="quiz-list"></section>
+
+  <footer>
+    <p>&copy; 2024 Quiz App. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
